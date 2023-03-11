@@ -1,0 +1,19 @@
+{
+    "products": [
+      {
+        "producttitle": "บุหรี่",
+        "des": "โครตดี",
+        "price": 10
+      },
+      {
+        "producttitle": "บุหรี่ไฟฟ้า",
+        "des": "โครตดีมาก",
+        "price": 20
+      },
+      {
+        "producttitle": "กัญชา",
+        "des": "โครตดีเหี้ยๆ",
+        "price": 30
+      }
+    ]
+  }

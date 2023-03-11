@@ -4,6 +4,7 @@ const port = 3000;
 const debug = require("debug", "app");
 const morgan = require("morgan");
 const path = require("path");
+const products = require('./data/product.json')
 const productRouter = express.Router();
 app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
@@ -17,7 +18,8 @@ app.get("/", (req, res) => {
   });
 });
 productRouter.route("/").get((req, res) => {
-  res.send("hello world");
+  res.render("products",
+    products)
 });
 app.use("/product", productRouter);
 app.listen(port, () => {

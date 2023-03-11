@@ -5,7 +5,7 @@ const debug  = require('debug','app')
 const morgan  = require('morgan')
 app.use(morgan('combined'));
 app.get('/',(req,res) =>{
-    res.send('hi')
+    res.send('hi mirachi')
 })
 app.listen(port,()=>{
     debug('listenning on port',port);
